@@ -44,7 +44,7 @@ nav img{
 .nav-links ul li a{
     color:#1F2A44;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 14px;
     position: relative;
     font-weight:600;
 }
@@ -91,33 +91,34 @@ nav img{
 }
 .head-content p{
     color: #E09F3E;
+    margin-bottom: 15px;
 }
-.head-content button{
-    margin-top: 15px;
-    padding:5px 15px;
+.head-content .btn{
+    margin-top: 20px;
+    padding:5px 10px;
     border-radius: 5px;
     background-color: transparent;
     border-style: solid;
     border-color:#E09F3E;
-    font-weight:700;
+    font-weight:400;
+    font-size:15px;
     color:white;
 }
-.head-content button:hover{
+.head-content .btn:hover{
     background-color: #E09F3E;
     cursor: pointer;
     transition:0.5s;
 }
-.head-content button a{
-     font-weight:500;
-    color:white;
-    text-decoration:none
+.head-content a.btn{
+    margin-top:20px;
+    text-decoration: none;
 }
 .h-socials{
     padding-top:15px;
-    font-size: 25px;
+    font-size: 22px;
 }
 .h-socials a{
-    color:#E09F3E
+    color:#E09F3E;
 }
 
 /*----------SERVICE------------*/
@@ -150,16 +151,15 @@ nav img{
     margin:5px 0 10px 0;
     color:#1F2A44;
 }
-.service button{
+.service .btn{
     background-color:#E09F3E;
     border: none;
+    color:#1F2A44;
     padding: 5px 25px;
     float: right;
     border-radius: 5px;
     margin-right:50px;
-}
-.service button a{
-    color:#1F2A44;
+    text-decoration: none;
 }
 
 /*--------------Portfolio----------*/
@@ -169,7 +169,7 @@ nav img{
 }
 .gallery h2{
     text-align:center;
-    margin-bottom:20px;
+    margin-bottom:5px;
     color:#E09F3E;
 }
 .container{
@@ -184,7 +184,9 @@ nav img{
 	max-width: 100%;
 	vertical-align: middle;
 }
+
 /*.gallery*/
+
 .gallery{
 	width: 100%;
 	display: block;
@@ -307,6 +309,63 @@ nav img{
     color:#ffffff;
 }
 
+/*-----------TESTIMONIALS--------*/
+.testimonial-sec{
+    display:flex;
+    justify-content:center;
+}
+.testimonials{
+    margin-bottom:100px;
+    width: 90%;
+}
+.testimonials h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color:#1F2A44;
+}
+.testimonials>p{
+    text-align: center;
+    margin:20px 100px 30px;
+}
+
+.testimonial-content{
+    display: flex;
+}
+.testimony-part{
+    margin:0 10px;
+    border: solid 1px black;
+    padding: 40px 15px;
+    border-radius: 10px;
+    flex: 1;
+}
+.testimony-part:hover{
+    box-shadow: 0px 0px 4px 0.5px;
+}
+.testimony-part i{
+    font-size:2rem;
+    color:#E09F3E;
+}
+.testimony{
+    margin-bottom: 20px;
+    line-height:1.5em;
+}
+.client-details{
+    display:flex;
+    margin-bottom:10px;
+}
+.client-details>div{
+    margin-left: 20px;
+}
+.client-details h3{
+    color:#1F2A44;
+}
+.testimonial-content img{
+    width:50px;
+}
+.testimony-part em{
+    font-family: montserrat;
+    font-size:0.8rem;
+}
 /*----------CONTACT US----------*/
 .contacts{
     display:flex;
@@ -368,25 +427,22 @@ form button{
     z-index:2;
     padding:170px 0;
 }
-.inner-parallax2 button{
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-    padding:5px 15px;
-    background-color:transparent;
-    border-style:solid;
-    border-color:#E09F3E;
-    border-radius: 5px;
+.inner-parallax2 .btn1{
+    display: flex;
     margin-top:20px;
+    justify-content: center;
 }
-.inner-parallax2 button:hover{
+.inner-parallax2 .btn:hover{
     background-color:#E09F3E;
 }
-.inner-parallax2 button a{
+.inner-parallax2 a.btn{
     color:#ffffff;
     text-decoration:none;
+    border: solid #E09F3E;
     font-weight:600;
     font-size: 1.5rem;
+    padding: 5px 10px;
+    border-radius:10px;
 }
 .inner-parallax2 h2{
     text-align:center;
@@ -439,6 +495,8 @@ form button{
 nav .fa-solid{
     display:none;
 }
+
+
 @media screen and (max-width:700px){
     html, body{
         overflow-x:hidden;
@@ -492,13 +550,13 @@ nav .fa-solid{
 .head-content h1{
     margin-bottom: 5px;
     color:#E09F3E;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 .head-content p{
     color: white;
     font-size:0.8rem;
 }
-.head-content button{
+.head-content .btn{
     margin-top: 15px;
     padding:2px 5px;
     border-radius: 5px;
@@ -533,7 +591,7 @@ nav .fa-solid{
 .service-content img{
     margin: 20px 0 5px 0;
 }
-.service button{
+.service .btn{
     margin-top:20px;
 }
 .h-socials{
@@ -566,6 +624,18 @@ nav .fa-solid{
     border-radius:10px;
 }
 
+/*-----------TESTIMONIALS--------*/
+.testimonial-content{
+    flex-direction: column;
+}
+.testimonials>p{
+    text-align: center;
+    margin:0 10px 20px;
+}
+.testimony-part{
+    margin: 10px 20px 30px; 
+}
+
 /*--------CONTACT US--------------*/
 .contacts .cnt{
     width:90%;
@@ -580,9 +650,9 @@ nav .fa-solid{
         background-attachment: scroll;
         background-position: center top;
   }
-  .inner-parallax2 button a{
+.inner-parallax2 a.btn{
     font-size:1rem;
-  }
+}
   .inner-parallax2 h2{
     font-size:2rem;
 }
