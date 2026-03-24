@@ -32,7 +32,9 @@
             <h1><em style="color:white">Hello I'm Alex,</em><br>
             BRAND IDENTITY / WEB<br>DESIGNER.</h1>
             <p>I Help Businesses Build Identities That Feel Established.</p>
+            <div class="reveal">
             <a href="https://wa.me/254705822326" class="btn" target="_blank">Let's Talk</a>
+            </div>
             <div class="h-socials">
              <a href="tel:+254705822326"><i class="fa-solid fa-phone"></i></a>
              <a href="https://www.linkedin.com/in/alex-mwakideu-0b8515121/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
@@ -47,7 +49,7 @@
 
     <!------------SERVICE----------->
 
-    <section class="service">
+    <section class="service reveal">
          <h2>Services</h2>
             <div class="services">
             <div class="img1">
@@ -83,7 +85,7 @@
 
     <!---------PORTFOLIO-------->
 
-<section class="gallery">
+<section class="gallery reveal">
     <h2>Portfolio</h2>
 	<div class="container">
 		<div class="row">
@@ -166,8 +168,7 @@
     
     <!-------------ABOUT--------->
     
-    <section>
-        <div class="margin"></div>
+    <section class="reveal">
         <div class="parallax">
             <div class="inner-parallax">
                 <div class="about-content">
@@ -183,7 +184,7 @@ At Pixel Intelligent, design isn’t about trends, it’s about creating visuals
 
     <!-------TESTIMONIALS----->
 
-    <section class="testimonial-sec">
+    <section class="testimonial-sec reveal">
         <div class="testimonials">
             <h2>TESTIMONIALS</h2>
             <p>Behind every brand project is a partnership built on trust, communication, and creative thinking.
@@ -235,7 +236,7 @@ At Pixel Intelligent, design isn’t about trends, it’s about creating visuals
 
     <!------CONTACT US------>
 
-    <section class="contacts">
+    <section class="contacts reveal">
         <div class="cnt">
             <form action="https://api.web3forms.com/submit" method="POST">
             <h2>Contact Me</h2>
@@ -264,7 +265,7 @@ At Pixel Intelligent, design isn’t about trends, it’s about creating visuals
 
     <section class="footer">
         <div class="flex-item">
-            <img src="./images/white logo.webp">
+            <img src="./images/White Logo.webp">
             <p>I Transform Ideas into Bold, Meaningful Visual Identities. Helping Businesses Look as Good as They Dream to Be</p>
         </div>
         <div class="flex-item">
@@ -313,5 +314,23 @@ At Pixel Intelligent, design isn’t about trends, it’s about creating visuals
                 navLinks.style.right ="-200px";
             }
         </script>
+
+        <script>
+
+const reveals = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("active");
+    }
+  });
+}, {
+  threshold: 0.2
+});
+
+reveals.forEach((el) => observer.observe(el));
+
+</script>
 </body>
 </html>
