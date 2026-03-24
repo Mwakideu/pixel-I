@@ -152,7 +152,7 @@ animation-delay: 0.3s;
 transform: translateY(40px);
 animation: revealUp 1.4s ease forwards;
 }
-.head-content .revealed:hover{
+.head-content .btn:hover{
     background-color: #E09F3E;
     cursor: pointer;
     transition:0.5s;
