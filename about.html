@@ -95,7 +95,7 @@
             <div>  
             <h1>ABOUT</h1>
             <p>Transforming Ideas Into Visual Brilliance</p>
-            <div class="reveal">
+            <div class="revealed">
             <a href="https://wa.me/254705822326" class="btn" target="_blank">Let's Talk</a>
             </div>
             <div class="h-socials">
@@ -111,7 +111,7 @@
     </section>
 
     <!--------------ABOUT----------->
-    <section class="aboutus">
+    <section class="aboutus reveal">
         <div class="aboutus1">
         <h2>ABOUT</h2>
          <p>Pixel Intelligent is a creative design brand focused on helping businesses build strong, consistent, and recognizable visual identities. I specialize in logo design, brand identity systems, and brand-driven web design, creating digital experiences that look intentional and communicate clearly.<br><br>I work with startups, small businesses, and growing brands that understand the value of design beyond aesthetics. Every project begins with understanding your brand’s purpose, audience, and goals. So the final result isn’t just visually appealing, but strategically aligned.<br><br>
@@ -195,5 +195,23 @@
                 navLinks.style.right ="-200px";
             }
         </script>
+
+         <script>
+
+const reveals = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("active");
+    }
+  });
+}, {
+  threshold: 0.2
+});
+
+reveals.forEach((el) => observer.observe(el));
+
+</script>
 </body>
 </html>
