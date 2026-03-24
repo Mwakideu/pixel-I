@@ -147,12 +147,12 @@ transform: translateY(40px);
 animation: revealUp 2s ease forwards;
 animation-delay: 0.3s;
 }
-.head-content .reveal{
+.head-content .revealed{
      opacity:0;
 transform: translateY(40px);
 animation: revealUp 1.4s ease forwards;
 }
-.head-content .reveal:hover{
+.head-content .revealed:hover{
     background-color: #E09F3E;
     cursor: pointer;
     transition:0.5s;
