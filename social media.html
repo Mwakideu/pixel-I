@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .a-images .mobile{
+            display:none;
+        }
+        @media screen and (max-width:800px){
+            .a-images .mobile{
+                display: block;
+            }
+            .a-images .desktop{
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
     <section class="a-img">
@@ -15,11 +28,18 @@
     <h2 style="padding-bottom:30px">Social Media Design</h2>
     <div class="a-images">
         <img src="./social media/Vcarousel.webp">
-        <img src="./social media/1.webp">
-        <img src="./social media/2.webp">
-        <img loading="lazy" src="./social media/3.webp">
-        <img loading="lazy" src="./social media/A.webp">
-        <img loading="lazy" src="./social media/4.webp">
+        <img src="./social media/5.webp" class="desktop">
+        <img src="./social media/6.webp" class="desktop">
+        <img loading="lazy" src="./social media/7.webp" class="desktop">
+        <img loading="lazy" src="./social media/2.webp" class="desktop">
+        <img loading="lazy" src="./social media/3.webp" class="desktop">
+        <img loading="lazy" src="./social media/4.webp" class="desktop">
+        <img src="./social media/55.webp" class="mobile">
+        <img src="./social media/66.webp" class="mobile">
+        <img loading="lazy" src="./social media/77.webp" class="mobile">
+        <img loading="lazy" src="./social media/22.webp" class="mobile">
+        <img loading="lazy" src="./social media/33.webp" class="mobile">
+        <img loading="lazy" src="./social media/44.webp" class="mobile">
     </div>
     </section>
 </body>
