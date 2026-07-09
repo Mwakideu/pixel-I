@@ -637,7 +637,10 @@ nav .fa-solid{
     flex-direction: column;
     justify-content: center;
 }
-.services>.img1>div>img{
+.services>.img1>div>.desktopImg{
+    display: none;
+}
+.services>.img1>div>.mobileImg{
     display:block;
     width:75%;
     margin-left:auto;
