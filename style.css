@@ -181,8 +181,11 @@ animation: revealUp 1.8s ease forwards;
 .services{
     display: flex;
 }
-.service img{
+.service .img1 .desktopImg{
     width:500px;
+}
+.service .img1 .mobileImg{
+    display: none;
 }
 .service-content{
     display:grid;
