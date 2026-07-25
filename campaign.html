@@ -12,6 +12,17 @@
             text-align: center;
             font-size: 1.2rem;
         }
+        .a-images .mobile{
+            display:none;
+        }
+        @media screen and (max-width:800px){
+            .a-images .desktop{
+                display:none;
+            }
+             .a-images .mobile{
+            display:block;
+        }
+        }
     </style>
 </head>
 <body>
@@ -23,18 +34,24 @@
     <h2>JBI DESIGN<br><span>CAMPAIGN</span></h2>
     <div class="a-images">
         <img src="./campaign/overview.webp">
-        <img src="./campaign/cover poster1.webp">
+        <img src="./campaign/cover poster1.webp" class="mobile">
+        <img src="./campaign/cover poster2.webp" class="desktop">
         <p>Campaign Cover Poster</p>
-        <img src="./campaign/Facebook Poster1.webp">
+        <img src="./campaign/Facebook Poster1.webp" class="mobile">
+        <img src="./campaign/facebook poster2.webp" class="desktop">
         <p>Facebook Awareness Poster</p>
-        <img src="./campaign/event poster1.webp">
+        <img src="./campaign/event poster1.webp" class="mobile">
+        <img src="./campaign/event poster2.webp" class="desktop">
         <p>Community Event Poster</p>
-        <img loading="lazy" src="./campaign/infographics.webp">
+        <img loading="lazy" src="./campaign/infographics.webp" class="mobile">
+        <img loading="lazy" src="./campaign/inforgraphic2.webp" class="desktop">
         <p>Infographic</p>
         <img loading="lazy" src="./campaign/roll up2.webp">
         <p>Roll-up Banner</p>
         <img loading="lazy" src="./campaign/Instagram Carousel.webp">
         <p>Instagram Carousel</p>
+        <img loading="lazy" src="./campaign/Bronchure.webp">
+        <p>Bronchure</p>
     </div>
     </section>
 </body>
