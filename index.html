@@ -13,28 +13,50 @@
     <script src="https://kit.fontawesome.com/efa96cfc64.js" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anta&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Herr+Von+Muellerhoff&family=Zen+Dots&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- Website Preloader -->
+<div class="preloader" id="preloader">
+    <video
+        id="loaderVideo"
+        autoplay
+        muted
+        playsinline
+        preload="auto"
+        loop
+    >
+        <source src="./images/pixel-loader.mp4" type="video/mp4">
+    </video>
+</div>
+
+    <nav>
+        <a href="index.html"><img src="./images/logoo.webp" alt="Pixel Intelligent logo"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-rectangle-xmark" id="menuClose" role="button" tabindex="0" aria-label="Close menu"></i>
+            <ul>
+                <li><a href="./index.html" class="active">HOME</a></li>
+                <li><a href="./about.html">ABOUT</a></li>
+                <li><a href="./services.html">SERVICES</a></li>
+                <li><a href="./portfolio.html">PROJECTS</a></li>
+                <li><a href="./pricing.html">PRICING</a></li>
+                <li><a href="./contacts.html">CONTACT ME</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" id="menuOpen" role="button" tabindex="0" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"></i>
+    </nav>
     <section class="head">
-        <nav>
-            <a href="index.html"><img src="./images/logoo.webp"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa-solid fa-rectangle-xmark" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="./index.html">HOME</a></li>
-                    <li><a href="./about.html">ABOUT</a></li>
-                    <li><a href="./services.html">SERVICES</a></li>
-                    <li><a href="./portfolio.html">PROJECTS</a></li>
-                    <li><a href="./contacts.html">CONTACT ME</a></li>
-            </div>
-            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
-        </nav>
         <div class="head-content">
             <div>
-                <img src="./images/passport222.webp" class="h-img2">
-            <h1><em style="color:white">Hello I'm Alex,</em><br>
-            BRAND IDENTITY / WEB<br>DESIGNER.</h1>
+                <img src="./images/passport222.webp" class="h-img2" alt="Alex Ndambo, brand and web designer">
+                <div class="headerTyping">
+                    <h1>
+                        <span class="fixed">Hello I'm Alex,</span><br>
+                        <span class="animate"></span>
+                    </h1></div>
+            <!----<h1><em style="color:white">Hello I'm Alex,</em><br>
+            BRAND IDENTITY / WEB<br>DESIGNER.</h1>---->
             <p>I Help Businesses Build Identities That Feel Established.</p>
             <div class="revealed">
             <a href="https://wa.me/254705822326" class="btn" target="_blank">Let's Talk</a>
@@ -46,7 +68,7 @@
              </div>
             </div>
             <div>
-            <img src="./images/passport222.webp" class="h-img1">
+            <img src="./images/passport222.webp" class="h-img1" alt="Alex Ndambo, brand and web designer">
             </div>
         </div>
     </section>
@@ -87,6 +109,7 @@
         </div>
         <a href="./services.html" class="btn">More</a>
     </section>
+
 
     <!---------PORTFOLIO-------->
 
@@ -170,7 +193,7 @@
 			<!-- gallery item start -->
 			<div class="gallery-item web">
 				<div class="gallery-item-inner">
-					<img loading="lazy" src="./images/portfolio/pixelweb.webp" alt="Pixel intelligent website project" id="p-website">
+					<img loading="lazy" src="./images/portfolio/pixelweb.png" alt="Pixel intelligent website project" id="p-website">
                     <a href="index.html"><div class="image-overlay">
                         <h2 class="img-title" >Pixel Intelligent</h2>
                         <p>Website</p>
@@ -194,16 +217,125 @@
 </div>
 </div>
 <div class="margin"></div>
-    </section>
+</section>
+
+<!-------Work Process--------->
+
+<section class="timeline">
+    <h2>My Work Process</h2>
+    <p>Every great project starts with understanding the bigger picture. My process combines strategy, creativity and thoughtful execution to turn ideas into meaningful brand and digital experiences.</p>
+    <div class="workProcessCards">
+        <div class="timeline-bar"></div>
+    <div class="timeline-item left-container">
+        <img src="./images/white logo.webp">
+        <div class="textBox">
+            <h4>Discovery & Strategy</h4>
+            <p>Understanding your business, audience, goals and the problem we're trying to solve.</p>
+            <span class="left-container-arrow"></span>
+        </div>
+    </div>
+    <div class="timeline-item right-container">
+        <img src="./images/white logo.webp">
+        <div class="textBox">
+            <h4>Concept & Direction</h4>
+            <p>Exploring ideas, visual directions and creative concepts that align with your brand.</p>
+            <span class="right-container-arrow"></span>
+        </div>
+    </div>
+    <div class="timeline-item left-container">
+        <img src="./images/white logo.webp">
+        <div class="textBox">
+            <h4>Design & Development</h4>
+            <p>Bringing the chosen direction to life through thoughtful design and functional development.</p>
+            <span class="left-container-arrow"></span>
+        </div>
+    </div>
+    <div class="timeline-item right-container">
+        <img src="./images/white logo.webp">
+        <div class="textBox">
+            <h4>Refinement & Feedback</h4>
+            <p>Reviewing the work, gathering feedback and making necessary refinements.</p>
+            <span class="right-container-arrow"></span>
+        </div>
+    </div>
+    <div class="timeline-item left-container">
+        <img src="./images/white logo.webp">
+        <div class="textBox">
+            <h4>Delivery & Launch</h4>
+            <p>Handing over the final assets or launching the finished digital experience.</p>
+            <span class="left-container-arrow"></span>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+<!----- Skills Section ------>
+<section class="skillsSec" id="skillsSection">
+    <h2>My Skills</h2>
+    <p class="skillsIntro">A blend of creativity and technical expertise. I use design tools and web technologies to build distinctive brand identities and digital experiences that look great and serve a purpose.</p>
+
+    <div class="skills">
+        <div class="programmingSkills">
+            <h4>Programming Skills</h4>
+            <ul>
+                <li>
+                    <div>
+                    <P>html</P><p>97%</p>
+                    </div>
+                    <span class="bar"><span class="html"></span></span>
+                </li>
+                <li>
+                    <div>
+                    <P>css</P><p>86%</p>
+                    </div>
+                    <span class="bar"><span class="css"></span></span>
+                </li>
+                <li>
+                    <div>
+                    <P>javascript</P><p>75%</p>
+                    </div>
+                    <span class="bar"><span class="javascript"></span></span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="designSkills">
+            <h4>Design Skills</h4>
+            <ul>
+                <li>
+                    <div>
+                    <P>photoshop</P><p>96%</p>
+                    </div>
+                    <span class="bar"><span class="photoshop"></span></span>
+                </li>
+
+                <li>
+                    <div>
+                    <P>illustrator</P><p>84%</p>
+                    </div>
+                    <span class="bar"><span class="illustrator"></span></span>
+                </li>
+
+                <li>
+                    <div>
+                    <P>after effects</P><p>70%</p>
+                    </div>
+                    <span class="bar"><span class="afterEffects"></span></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
 
     <!-------TESTIMONIALS----->
 
-    <section class="testimonial-sec reveal">
+    <section class="testimonial-sec">
         <div class="testimonials">
-            <h2>TESTIMONIALS</h2>
+            <h2>Testimonials</h2>
             <p>Behind every brand project is a partnership built on trust, communication, and creative thinking.
                 Here’s what clients have said about working with Pixel Intelligent.</p>
-            <div class="testimonial-content">
+            <div class="testimonial-content reveal">
                 <div class="testimony-part">
                     <i class="fa-solid fa-quote-left"></i>
                     <p class="testimony">Alex brought our vision to life beautifully.
@@ -248,18 +380,20 @@
         </div>
     </section>
 
+
     <!------CONTACT US------>
 
     <section class="contacts reveal">
         <div class="cnt">
-            <form action="https://api.web3forms.com/submit" method="POST">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
             <h2>Contact Me</h2>
             <input type="hidden" name="access_key" value="2d3f613c-3d5b-45d3-bb7a-eb1f00915d90">
             <input type="text" name="name" placeholder="Enter your name" required>
             <input type="email" name="email" placeholder="Enter email address" required>
             <input type="text" name="subject" placeholder="Enter subject" required>
-            <textarea name="message" rows="8" placeholder="Message"required></textarea>
+            <textarea name="message" rows="8" placeholder="Message" required></textarea>
             <button type="submit" class="sub-button">Send Message</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
             </form>
         </div>
     </section>
@@ -279,7 +413,7 @@
 
     <section class="footer">
         <div class="flex-item">
-            <img src="./images/white logo.webp">
+            <img src="./images/white logo.webp" alt="Pixel Intelligent logo">
             <p>I Transform Ideas into Bold, Meaningful Visual Identities. Helping Businesses Look as Good as They Dream to Be</p>
         </div>
         <div class="flex-item">
@@ -299,17 +433,17 @@
         </div>
         <div class="flex-item next1">
             <H3>Quick Links</H3>
-            <p>Home</p>
-            <p>About</p>
-            <p>Service</p>
-            <p>Projects</p>
-            <p>Contacts</p>
+            <p><a href="./index.html">Home</a></p>
+            <p><a href="./about.html">About</a></p>
+            <p><a href="./services.html">Service</a></p>
+            <p><a href="./portfolio.html">Projects</a></p>
+            <p><a href="./contacts.html">Contacts</a></p>
         </div>
         <div class="flex-item next">
             <h3>Follow Us</h3>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-square-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
+            <a href="https://wa.me/254705822326" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/alex-mwakideu-0b8515121/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.tiktok.com/@pixelintelligent" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
             <p class="quote"><em>© 2025 Created by Pixel Intelligent</em></p>
         </div>
     </section>
@@ -319,15 +453,7 @@
 
     <!---------JAVASCRIPT TOGGLE MENU-------->
 
-<script>
-            var navLinks = document.getElementById("navLinks");
-            function showMenu(){
-                navLinks.style.right ="0";
-            }
-            function hideMenu(){
-                navLinks.style.right ="-200px";
-            }
-        </script>
+
 
         <script>
 
@@ -345,6 +471,18 @@ const observer = new IntersectionObserver((entries) => {
 
 reveals.forEach((el) => observer.observe(el));
 
+</script>
+
+<!-------Header type animation script------->
+
+<script>
+    var typed = new Typed('.animate', {
+        strings:['BRAND IDENTITY DESIGNER.', 'WEB DEVELOPER.'],
+            typeSpeed: 100,
+            backSpeed: 100,
+            typeDelay: 1000,
+            loop: true
+    })
 </script>
 </body>
 </html>
