@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Services | Alex Ndambo – Pixel Intelligent</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://kit.fontawesome.com/efa96cfc64.js" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -70,7 +70,15 @@
         }
 
         /*---------mobile version------*/
-        @media screen and (max-width:700px){
+        @media screen and (max-width:1024px){
+            .services-pagea{
+                margin: 60px 40px 20px 40px;
+            }
+            .services-pageb{
+                margin: 30px 40px 20px 40px;
+            }
+        }
+        @media screen and (max-width:768px){
             .head{
                 height:65vh;
             }
@@ -91,21 +99,22 @@
     </style>
     </head>
     <body>
+    <nav>
+        <a href="index.html"><img src="./images/logoo.webp" alt="Pixel Intelligent logo"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-rectangle-xmark" id="menuClose" role="button" tabindex="0" aria-label="Close menu"></i>
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./about.html">ABOUT</a></li>
+                <li><a href="./services.html" class="active">SERVICES</a></li>
+                <li><a href="./portfolio.html">PROJECTS</a></li>
+                <li><a href="./pricing.html">PRICING</a></li>
+                <li><a href="./contacts.html">CONTACT ME</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" id="menuOpen" role="button" tabindex="0" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"></i>
+    </nav>
     <section class="head">
-        <nav>
-            <a href="index.html"><img src="./images/logoo.webp"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa-solid fa-rectangle-xmark" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="./index.html">HOME</a></li>
-                    <li><a href="./about.html">ABOUT</a></li>
-                    <li><a href="./services.html">SERVICES</a></li>
-                    <li><a href="./portfolio.html">PROJECTS</a></li>
-                    <li><a href="./contacts.html">CONTACT ME</a></li>
-                </ul>
-            </div>
-            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
-        </nav>
         <div class="head-content">
             <div>  
             <h1>SERVICES</h1>
@@ -120,7 +129,7 @@
              </div>
             </div>
             <div>
-            <img src="./images/passport222.webp" class="h-img1">
+            <img src="./images/passport222.webp" class="h-img1" alt="Alex Ndambo, brand and web designer">
             </div>
         </div>
     </section>
@@ -223,7 +232,7 @@ I refine and elevate existing brands while keeping their core essence intact—g
 
     <section class="footer">
         <div class="flex-item">
-            <img src="./images/white logo.webp">
+            <img src="./images/white logo.webp" alt="Pixel Intelligent logo">
             <p>I Transform Ideas into Bold, Meaningful Visual Identities. Helping Businesses Look as Good as They Dream to Be</p>
         </div>
         <div class="flex-item">
@@ -243,32 +252,24 @@ I refine and elevate existing brands while keeping their core essence intact—g
         </div>
         <div class="flex-item next1">
             <H3>Quick Links</H3>
-            <p>Home</p>
-            <p>About</p>
-            <p>Service</p>
-            <p>Projects</p>
-            <p>Contacts</p>
+            <p><a href="./index.html">Home</a></p>
+            <p><a href="./about.html">About</a></p>
+            <p><a href="./services.html">Service</a></p>
+            <p><a href="./portfolio.html">Projects</a></p>
+            <p><a href="./contacts.html">Contacts</a></p>
         </div>
         <div class="flex-item next">
             <h3>Follow Us</h3>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-square-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
+            <a href="https://wa.me/254705822326" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/alex-mwakideu-0b8515121/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.tiktok.com/@pixelintelligent" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
             <p class="quote"><em>© 2025 Created by Pixel Intelligent</em></p>
         </div>
     </section>
 
     <!---------JAVASCRIPT TOGGLE MENU-------->
 
-<script>
-            var navLinks = document.getElementById("navLinks");
-            function showMenu(){
-                navLinks.style.right ="0";
-            }
-            function hideMenu(){
-                navLinks.style.right ="-200px";
-            }
-        </script>
+<script src="script.js"></script>
 
          <script>
 
