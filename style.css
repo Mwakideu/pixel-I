@@ -244,7 +244,7 @@ animation: revealUp 1.8s ease forwards;
 /*----------SERVICE------------*/
 
 .service{
-    margin:0 80px 80px 80px;
+    margin: 0 80px 80px 80px;
 }
 .service>h2{
     text-align: center;
@@ -1540,8 +1540,8 @@ form button{
     .mobile-cta{
         display: block;
         position: fixed;
-        bottom: 0;
-        right: 0;
+        bottom: 80px;
+        right: 20px;
         z-index: 999;
     }
     .mobile-cta > div{
@@ -1812,9 +1812,10 @@ nav .fa-solid{
     height: 65vh;
     width: 100%;
 }
+
 /*----------SERVICES---------*/
 .service{
-    margin:20px 20px 80px 20px;
+    margin:-80px 20px 80px 20px;
 }
 .services{
     display: flex;
@@ -1865,6 +1866,7 @@ nav .fa-solid{
 }
 
 /*-------------ABOUT------------*/
+
 .about-content{
     Text-align:center;
     margin: 30px 20px;
