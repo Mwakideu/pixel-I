@@ -563,6 +563,7 @@ animation: revealUp 1.8s ease forwards;
     z-index: 0;
     left: 50%;
     margin-left: -5px;
+	border-radius: 5px;
 }
 
 /* Timeline bar animation */
